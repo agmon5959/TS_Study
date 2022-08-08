@@ -8,7 +8,7 @@
 | Week | 진행 | 스터디 내용 |
 | ---- | --- |----------- |
 | 1주차 | ✅ | DFS 및 BFS 백준 온라인 저지 3 문제 풀이 |
-| COLSPAN | https://www.acmicpc.net/problem/2606 |
+| ^ | https://www.acmicpc.net/problem/2606 |
 | COLSPAN | https://www.acmicpc.net/problem/1260 |
 | 1주차 | https://www.acmicpc.net/problem/2178 |
 | 2주차 | ☑️ |  |
