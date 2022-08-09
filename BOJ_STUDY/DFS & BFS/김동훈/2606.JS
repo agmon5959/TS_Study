@@ -1,7 +1,8 @@
 const filePath = process.platform === "linux" ? "/dev/stdin" : "input.txt";
 let input = require("fs").readFileSync(filePath).toString().trim().split("\n");
 
-const [n, m, v] = input.shift().split(" ").map(Number);
+const [n] = input.shift().split(" ").map(Number);
+const [m] = input.shift().split(" ").map(Number);
 
 const getGraph = (n, m) => {
     // 그래프 빈 배열로 초기화
@@ -29,43 +30,13 @@ const DFS = (next) => {
     }
 }
 
-//BFS
-const BFS = (next) => {
-    let queue = [next]; // 초기값 넣어주기
-    while (queue.length) {
-        // 탙출조건
-        let nextNode = queue.shift();
-        if (visited[nextNode] === 1) {
-            continue;
-        }
-
-        visited[nextNode] = 1; // check
-        ans_bfs.push(nextNode); // push
-
-        for (let i = 0; i < graph[nextNode].length; i++) {
-            if (visited[graph[nextNode][i]] === 0) {
-                queue.push(graph[nextNode][i]);
-            }
-        }
-    }
-}
-
 
 // 그래프 생성
 const graph = getGraph(n, m);
 
-// 정점 번호가 작은 것을 먼저 방문해야해서 그래프내 요소 오름차순 정렬
-graph.forEach((iter) => { iter.sort((a, b) => a - b) });
-
 // 방문한 노드를 체크할 체크 배열
 let visited = Array.from({ length: n + 1 }).fill(0);
-
 const ans_dfs = [];
-const ans_bfs = [];
+DFS(1);
+console.log(ans_dfs.length-1);
 
-DFS(v);
-console.log(ans_dfs.join(' ')) // 배열을 문자열로 리턴
-
-visited = visited.fill(0); // visited 배열의 값들을 0으로 재할당
-BFS(v);
-console.log(ans_bfs.join(' ')) // 배열을 문자열로 리턴
