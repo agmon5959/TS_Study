@@ -26,11 +26,11 @@ const BFS = (pX, pY) => {
 
     while (queue.length) {
         const [x, y] = queue.shift(); // 현재 좌표 가져오기
-        
+
         if (x === n - 1 && y === m - 1) break; // 최단거리 찾았으면 break
 
         for (let i = 0; i < 4; i++) { // 4방향으로 반복문
-            
+
             const [nX, nY] = [x + dX[i], y + dY[i]]; // direction X,Y 를 더해주어 4방향 판단
 
             if ((nX < 0 || nY < 0) || (nX >= n || nY >= m)) { // 갈 수 없는 곳이라면 continue
