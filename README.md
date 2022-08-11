@@ -5,7 +5,7 @@
 > https://waytocse.tistory.com/59
 
 
-<img width="478" alt="image" src="https://user-images.githubusercontent.com/58665661/184157367-b5ce39c8-3ab1-465b-8153-d62a32d7274f.png">
+<img width="632" alt="image" src="https://user-images.githubusercontent.com/58665661/184159806-98bcf0a9-3719-4af1-a048-14ea6d15994c.png">
 
 
 
