@@ -1,8 +1,7 @@
+<div align="center">
+
 
 ### ✨ 해적왕과 함께하는 알고리즘 및 타입스크립트 스터디 레파지토리입니다. ✨
-
-### PR 하는 법
-> https://waytocse.tistory.com/59
 
 
 <img width="632" alt="image" src="https://user-images.githubusercontent.com/58665661/184159806-98bcf0a9-3719-4af1-a048-14ea6d15994c.png">
@@ -18,3 +17,7 @@
 |  WEEK 2️⃣ | ☑️ |  |
 |  https://www.acmicpc.net/problem/1914 | ☑️ | Silver 1 하노이 탑
 |  https://www.acmicpc.net/problem/1916 | ☑️ | Gold 5 최소비용 구하기
+
+
+
+</div>
