@@ -5,6 +5,10 @@
 > https://waytocse.tistory.com/59
 
 
+<img width="478" alt="image" src="https://user-images.githubusercontent.com/58665661/184157367-b5ce39c8-3ab1-465b-8153-d62a32d7274f.png">
+
+
+
 | Week | 진행 | 스터디 내용 
 | :----: | :---: | ----------- 
 |   WEEK 1️⃣   | ✅ | DFS 및 BFS 백준 온라인 저지 3 문제 풀이
