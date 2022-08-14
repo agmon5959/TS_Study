@@ -34,11 +34,10 @@ let overAns;
 
 if (input <= 20) {
     DFS_hanoi(input, 1, 2, 3, answer);
-    console.log(answer.length);
+    console.log(BigInt(answer.length));
     console.log(answer.join('\n').replace(/[,]/g,' '));
 } else {
     // 메모리 초과
-    // 점화식 사용
-    overAns = BigInt(2 ** input - 1)
+    overAns = 2 ** input - 1
     console.log(overAns);
 }
