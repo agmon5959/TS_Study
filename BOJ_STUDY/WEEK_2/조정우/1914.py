@@ -10,13 +10,13 @@ def hanoi(disk, start, end, middle):
     hanoi(disk - 1, start, middle, end)
     print(start, end)
     hanoi(disk - 1, middle, end, start)
-
     return
 
 
 n = sys.stdin.readline().split()
 print(int(math.pow(2, int(n[0]))) - 1)
-hanoi(int(n[0]), 1, 3, 2)
+if int(n[0]) <= 20:
+    hanoi(int(n[0]), 1, 3, 2)
 
 
 # 원판이 한개인 경우:
