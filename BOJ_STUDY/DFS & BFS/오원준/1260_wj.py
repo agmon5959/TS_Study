@@ -23,6 +23,9 @@ def BFS(graph,visited,idx):
     queue.append(idx)
     visited[idx - 1] = 1
 
+    
+
+
     while queue:
         i = queue.pop(0)
         print(i , end=" ")

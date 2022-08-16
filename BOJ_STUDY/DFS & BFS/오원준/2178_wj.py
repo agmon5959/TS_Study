@@ -27,7 +27,7 @@ def find_exit(miro, x,y):
             elif miro[mx][my] == 1:
                 miro[mx][my] = miro[x][y] + 1
                 queue.append([mx,my])
-    # x, y 좌표가 아닌 N,M 좌표로 마지막 queue가 M,N 이라는 보장이 없다.
+    #x, y 좌표가 아닌 N,M 좌표로 마지막 queue가 M,N 이라는 보장이 없다.
     print(miro[N-1][M-1])
 
 
