@@ -9,32 +9,28 @@ const destination = input.pop();
 const maxNum = Number.MAX_SAFE_INTEGER;
 
 // 전체 그래프
-const graph = Array.from(Array(city), () => Array(city).fill(maxNum));
+const graph = Array.from(Array(city+1), () => Array(city+1).fill(maxNum));
 // 방문한 노드를 기억하는 배열
 const visited = Array.from({ length: city }).fill(false);
 // 최소비용이 담기는 배열
-const distance = Array.from({ length: city }).fill(0);
-
+const distance = Array.from({ length: city });
 
 
 // 전체 그래프 초기화
-for (let i = 0; i < city; i++) {
-    let start = input[i].split(' ')[0];
-    let end = input[i].split(' ')[1];
-    let cost = input[i].split(' ')[2];
-
-    graph[i][i] = 1;
+for (let i = 0; i < input.length; i++) {
+    let start = Number(input[i].split(' ')[0]);
+    let end = Number(input[i].split(' ')[1]);
+    let cost = Number(input[i].split(' ')[2]);
+    
     graph[start][end] = Number(cost);
-
 }
-
 // 현재 방문하지 않았던 노드 중에서 가장 짧은 거리를 가지는 노드를 구하는 함수
 const getSmallDist = () => {
     let min = maxNum;
     let idx = 0;
-    for (let i = 0; i < city; i++) {
+    for (let i = 1; i <= city; i++) {
         // 방문하지 않은 노드 중에서 현재 최소값보다 더 작은 값을 가지는 거리가 존재한다면 그 값으로 갱신한다.
-        if (!visited[i] && distance[i] < min) {
+        if (distance[i] < min && !visited[i]) {
             min = distance[i];
             idx = i;
         }
@@ -43,16 +39,16 @@ const getSmallDist = () => {
 }
 
 const solution = (start) => {
-    for (let i = 0; i < city; i++) {
+    for (let i = 1; i <= city; i++) {
         distance[i] = graph[start][i];
     }
     visited[start] = true;
-    for (let i = 0; i < city; i++) {
+    for (let i = 1; i <= city; i++) {
         let cur = getSmallDist();
         visited[cur] = true;
-        for (let j = 0; j < city; j++) {
+        for (let j = 1; j <= city; j++) {
             if (!visited[j]) {
-                if (distance[cur] + graph[cur][j] < distance[j]) {
+                if ( (distance[cur] + graph[cur][j]) < distance[j]) {
                     distance[j] = distance[cur] + graph[cur][j];
                 }
             }
@@ -62,4 +58,5 @@ const solution = (start) => {
 
 // console.log(destination.split(' '));
 solution(destination.split(' ')[0]);
-console.log(distance);
+console.log(distance[destination.split(' ')[1]]);
+
