@@ -16,7 +16,7 @@
 |  https://www.acmicpc.net/problem/2606 | ✅ | Silver 3 바이러스
 |  https://www.acmicpc.net/problem/1260 | ✅ | Silver 2 DFS와 BFS
 |  https://www.acmicpc.net/problem/2178 | ✅ | Silver 1 미로 탐색
-|  WEEK 2️⃣ | ☑️ |  |
+|  WEEK 2️⃣ | ✅ |  |
 |  https://www.acmicpc.net/problem/1914 | ✅ | Silver 1 하노이 탑
 |  https://www.acmicpc.net/problem/1916 | ✅ | Gold 5 최소비용 구하기
 |  WEEK 3️⃣ | ☑️ |  |
