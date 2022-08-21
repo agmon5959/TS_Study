@@ -1,9 +1,3 @@
-// 기존 실패한 이유
-// 1) A에서 B로 가는 노선이 여러개인 경우 고려하지 않았음.
-// 2) 우선순위 큐를 사용하지 않아서 시간초과
+const filePath = process.platform === "linux" ? "/dev/stdin" : "input.txt";
+const input = require("fs").readFileSync(filePath).toString().trim().split("\n");
 
-// 대가리 개멍청 개 똥멍청 멍청멍청 개멍청 개바보 바보 바보 바보 바보
-// 내 머리 바보바보바보바보바ㅗ바보 내 머리 병신병신병신병신병신
-// 정신 차려차려차려차려차려 왜케 멍청해 동훈아
-
-// 추후 다시 풀자 ,, 
