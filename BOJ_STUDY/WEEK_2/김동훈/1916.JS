@@ -15,9 +15,12 @@ const [startPoint, endPoint] = input[bus + 2].split(" ").map((e) => +e);
 
 let adj = Array.from(Array(city + 1), () => Array());
 
+
 paths.forEach(([start, end, cost]) => {
     adj[start].push([end, cost]);
 });
+console.log(paths);
+console.log(adj);
 
 // 1) 인접행렬을 만들어준다.
 // 2) 시작지점을 heap에 넣어주고, heap의 size가 0이 될 때까지 while문
@@ -30,7 +33,6 @@ costs[startPoint] = 0;
 heap.enqueue([startPoint, 0]);
 while (heap.size()) {
     const [s, c] = heap.dequeue();
-    console.log(s, c);
     // 방문했다면 건너뛰기
     if (costs[s] !== c) continue;
     for (let i = 0; i < adj[s].length; i++) {
