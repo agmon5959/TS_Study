@@ -13,9 +13,9 @@ def union_parent(a, b):
         parent[a] = b
 
 
-n, m = map(int, input().split())
+n, m = map(int, input().split())  # 집의 개수, 길의 개수 입력받기
 graph = []
-for _ in range(m):
+for _ in range(m):  # 길 입력받기
     a, b, c = map(int, input().split())
     graph.append([c, a, b])
 
@@ -23,9 +23,11 @@ parent = [0] * (n + 1)
 for i in range(1, n + 1):
     parent[i] = i
 
+# 간선 정렬
 graph.sort()
 
-selected = []
+# 크루스칼 수행
+selected = []  # 선택된 간선
 
 answer = 0
 for c, a, b in graph:
@@ -34,6 +36,8 @@ for c, a, b in graph:
         answer += c
         selected.append(c)
 
+# 마을을 두개로 분리하기 위해서 마지막 간선 제거
 answer -= selected.pop()
 
+# 출력
 print(answer)
