@@ -1,3 +1,7 @@
+import sys
+sys.setrecursionlimit(10**5)
+# 백준내에서 재귀 깊이를 정해놓은 크기가 지정되어 있어 해당 문제에서 재귀 depth 조절 로직 추가
+
 # 특정 원소가 속한 집합을 찾기
 def find_parent(parent, x):
     # 루트 노드가 아니라면, 루트 노드를 찾을 때까지 재귀적으로 호출
