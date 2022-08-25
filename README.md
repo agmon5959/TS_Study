@@ -13,18 +13,20 @@
 | Week | 진행 | 스터디 내용 
 | :----: | :---: | ----------- 
 |   WEEK 1️⃣   | ✅ | DFS 및 BFS 백준 온라인 저지 3 문제 풀이
-|  https://www.acmicpc.net/problem/2606 | ✅ | Silver 3 바이러스
-|  https://www.acmicpc.net/problem/1260 | ✅ | Silver 2 DFS와 BFS
-|  https://www.acmicpc.net/problem/2178 | ✅ | Silver 1 미로 탐색
+|  https://www.acmicpc.net/problem/2606 | ✅ | [Silver 3] 바이러스
+|  https://www.acmicpc.net/problem/1260 | ✅ | [Silver 2] DFS와 BFS
+|  https://www.acmicpc.net/problem/2178 | ✅ | [Silver 1] 미로 탐색
 |  WEEK 2️⃣ | ✅ |  |
-|  https://www.acmicpc.net/problem/1914 | ✅ | Silver 1 하노이 탑
-|  https://www.acmicpc.net/problem/1916 | ✅ | Gold 5 최소비용 구하기
+|  https://www.acmicpc.net/problem/1914 | ✅ | [Silver 1] 하노이 탑
+|  https://www.acmicpc.net/problem/1916 | ✅ | [Gold 5] 최소비용 구하기
 |  WEEK 3️⃣ | ✅ |  |
-|  https://www.acmicpc.net/problem/1647 | ✅ | Gold 4 도시 분할 계획
-|  https://www.acmicpc.net/problem/1717 | ✅ | Gold 4 집합의 표현
+|  https://www.acmicpc.net/problem/1647 | ✅ | [Gold 4] 도시 분할 계획
+|  https://www.acmicpc.net/problem/1717 | ✅ | [Gold 4] 집합의 표현
 |  WEEK 4️⃣ | ☑️ |  |
-|  https://www.acmicpc.net/problem/1647 | ☑️ | Gold 4 도시 분할 계획
-|  https://www.acmicpc.net/problem/1717 | ☑️ | Gold 4 집합의 표현
+|  https://www.acmicpc.net/problem/11726 | ☑️ | [Silver 3] 2×n 타일링
+|  https://www.acmicpc.net/problem/11727 | ☑️ | [Silver 3] 2×n 타일링2
+|  https://www.acmicpc.net/problem/9095 | ☑️ | [Silver 3] 1,2,3 더하기
+
 
 <br/>
 
