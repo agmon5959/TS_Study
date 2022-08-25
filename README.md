@@ -19,7 +19,10 @@
 |  WEEK 2️⃣ | ✅ |  |
 |  https://www.acmicpc.net/problem/1914 | ✅ | Silver 1 하노이 탑
 |  https://www.acmicpc.net/problem/1916 | ✅ | Gold 5 최소비용 구하기
-|  WEEK 3️⃣ | ☑️ |  |
+|  WEEK 3️⃣ | ✅ |  |
+|  https://www.acmicpc.net/problem/1647 | ✅ | Gold 4 도시 분할 계획
+|  https://www.acmicpc.net/problem/1717 | ✅ | Gold 4 집합의 표현
+|  WEEK 4️⃣ | ☑️ |  |
 |  https://www.acmicpc.net/problem/1647 | ☑️ | Gold 4 도시 분할 계획
 |  https://www.acmicpc.net/problem/1717 | ☑️ | Gold 4 집합의 표현
 
