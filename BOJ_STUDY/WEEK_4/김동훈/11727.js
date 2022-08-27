@@ -1,25 +1,14 @@
-const readline = require("readline");
-
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout,
-});
-
-rl.on("line", (line) => {
-    main(line);
-    rl.close();
-}).on("close", () => {
-    process.exit();
-});
-
-const main = (line) => {
-    line = Number(line);
-    const DP = new Array(line + 1).fill(0);
-    DP[1] = 1;
-    DP[2] = 3;
-
-    for (let i = 3; i <= line; i++) {
-        DP[i] = (DP[i - 1] + 2 * DP[i - 2]) % 10007;
+const filePath = process.platform === "linux" ? "/dev/stdin" : "input.txt";
+let input = Number(require("fs").readFileSync(filePath).toString().trim().split("\n"));
+// 다이나믹 테이블
+const dy = Array.from({ length: input + 1 });
+dy[0] = 0;
+dy[1] = 1;
+dy[2] = 3;
+if (input > 2) {
+    for (let i = 3; i <= input; i++) {
+        // 점화식
+        dy[i] = ( (dy[i - 2]*2) + dy[i - 1] )% 10007;
     }
-    console.log(DP[line]);
-};
+}
+console.log(dy[input]);
