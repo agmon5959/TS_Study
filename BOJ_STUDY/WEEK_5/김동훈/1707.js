@@ -4,6 +4,8 @@ let input = (require("fs").readFileSync(filePath).toString().trim().split("\n"))
 const N = +input.shift();
 const chk1 = 1;
 const chk2 = 2;
+const ans = Array(N).fill('YES');
+
 
 const bfs = (start, graph, visited) => {
 
@@ -21,7 +23,10 @@ const bfs = (start, graph, visited) => {
         } else {
             nextSet = chk1;
         }
-            
+        
+        
+
+        // 런타임에러 해결
         if (!graph[node]) {
             continue;
         }
@@ -42,30 +47,22 @@ const bfs = (start, graph, visited) => {
     return true;
 };
 
-const ans = Array(N).fill('YES');
-
 for (let i = 0; i < N; i++) {
-    const [V, E] = input.shift().split(' ').map(Number);
-    const edges = input.splice(0, E).map(v => v.split(' ').map(Number));
-    // console.log(edges);
-
-    // const graph = Array.from(Array(edges), () => [])
-    // for (let i = 0; i < graph.length; i++) {
-    //     if (input[i] !== undefined) {
-    //         let [from, to] = input[i].split(" ").map(e => +e);
-    //         graph[from] ? graph[from].push(to) : graph[from] = [to];
-    //         graph[to] ? graph[to].push(from) : graph[to] = [from];
-    //     }
-    // }
+    // 정점의 갯수 V , 간선의 갯수 E
+    const [V, E] = input.shift().split(' ').map(e=>+e);
+    const edges = input.splice(0, E).map(v => v.split(' ').map(e=>+e));
     
+
     const graph = edges.reduce((acc, v) => {
         const from = v[0];
         const to = v[1];
+
         if (acc[from]) {
             acc[from].push(to);
         } else {
             acc[from] = [to];
         }
+
         if (acc[to]) {
             acc[to].push(from);
         } else {
@@ -74,15 +71,17 @@ for (let i = 0; i < N; i++) {
         return acc;
     }, {});
 
-    
-    // console.log(graph);
 
-    // console.log(graph);
+    
     const visited = Array(V + 1).fill(0);
+
     for (let j = 1; j <= V; j++) {
+        
         if (visited[j]) {
             continue;
         }
+
+        // 진입점은 중요하지않았음 .. !
         if (!bfs(j, graph, visited)) {
             ans[i] = 'NO';
             break;
