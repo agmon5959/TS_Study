@@ -8,6 +8,10 @@
   
 <img width="632" alt="image" src="https://user-images.githubusercontent.com/58665661/184159806-98bcf0a9-3719-4af1-a048-14ea6d15994c.png">
 
+< 0️⃣ 1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣ 6️⃣ 7️⃣ 8️⃣ 9️⃣ 🔟 >
+< ✅ ☑️ >
+
+
 <br/><br/>
 
 | Week | 진행 | 스터디 내용 
@@ -26,9 +30,13 @@
 |  https://www.acmicpc.net/problem/11726 | ✅ | [Silver 3] 2×n 타일링
 |  https://www.acmicpc.net/problem/11727 | ✅ | [Silver 3] 2×n 타일링2
 |  https://www.acmicpc.net/problem/9095 | ✅ | [Silver 3] 1,2,3 더하기
-|  WEEK 5️⃣ | ☑️ |  |
-|  https://www.acmicpc.net/problem/18352 | ☑️ | [Silver 2] 특정 거리의 도시 찾기
-|  https://www.acmicpc.net/problem/1707 | ☑️ | [Gold 4] 이분 그래프
+|  WEEK 6️⃣ | ✅ |  |
+|  https://www.acmicpc.net/problem/18352 | ✅ | [Silver 2] 특정 거리의 도시 찾기
+|  https://www.acmicpc.net/problem/1707 | ✅ | [Gold 4] 이분 그래프
+|  WEEK 7️⃣ | ☑️ |  |
+|  https://www.acmicpc.net/problem/11726 | ☑️ | [Silver 3] 2×n 타일링
+|  https://www.acmicpc.net/problem/11727 | ☑️ | [Silver 3] 2×n 타일링2
+|  https://www.acmicpc.net/problem/9095 | ☑️ | [Silver 3] 1,2,3 더하기
 
 
 <br/>
