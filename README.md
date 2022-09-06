@@ -16,7 +16,7 @@
 
 | Week | 진행 | 스터디 내용 
 | :----: | :---: | ----------- 
-|   WEEK 1️⃣   | ✅ | DFS 및 BFS 백준 온라인 저지 3 문제 풀이
+|   WEEK 1️⃣   | ✅ | 
 |  https://www.acmicpc.net/problem/2606 | ✅ | [Silver 3] 바이러스
 |  https://www.acmicpc.net/problem/1260 | ✅ | [Silver 2] DFS와 BFS
 |  https://www.acmicpc.net/problem/2178 | ✅ | [Silver 1] 미로 탐색
