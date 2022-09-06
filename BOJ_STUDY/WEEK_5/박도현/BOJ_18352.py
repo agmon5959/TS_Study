@@ -36,6 +36,5 @@ if check == False:
     print(-1)
 
 
-
-
-
+#Pypy3로 제출해야 시간초과 발생 안합니다.
+#Python3로 제출시 시간초과 발생
