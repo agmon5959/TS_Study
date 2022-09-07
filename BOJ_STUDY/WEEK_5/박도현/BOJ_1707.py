@@ -1,46 +1,36 @@
+import sys
+input = sys.stdin.readline
 from collections import deque
 
-def bfs(start):
+def bfs(x):
+    visited[x] = 1
     q = deque()
-    visited[start] = 1
-    q.append(start)
+    q.append(x)
     while q:
-        node = q.popleft()
-        for i in graph[node]:
-            if visited[i] == 0:
-                visited[i] = -visited[node]
+        a = q.popleft()
+        for i in que[a]:
+            if visited[i] == 0:     # 방문한 적이 없으면
+                visited[i] = -visited[a]
                 q.append(i)
             else:
-                if visited[i] == visited[node]:
+                if visited[i] == visited[a]:       # 현재 정점과 연결된 정점의 그룹값이 같다면
                     return False
     return True
 
-#테스트 케이스 개수
-k = int(input())
 
-#그래프 정점, 간선의 개수 (v, e)
+k = int(input())
 for i in range(k):
     v, e = map(int, input().split())
-    graph = [[] for _ in range(v + 1)]
-    # 방문 노드 체크
-    visited = [0] * (v + 1)
-    flag = True
+    que = [[] for i in range(v+1)]
+    visited = [0]*(v+1)     # 방문한 정점 체크
+    flg = 1
     for j in range(e):
         a, b = map(int, input().split())
-        graph[a].append(b)
-        graph[b].append(a)
-    for t in range(1, v+1):
-        if visited[t] == 0:
-            if not bfs(t):
-                flag = False
+        que[a].append(b)
+        que[b].append(a)
+    for k in range(1, v+1):
+        if visited[k] == 0:
+            if not bfs(k):
+                flg = -1
                 break
-    print("YES" if flag else "No")
-
-
-
-
-
-
-
-
-
+    print('YES' if flg == 1 else 'NO')
