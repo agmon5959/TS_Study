@@ -34,9 +34,8 @@
 |  https://www.acmicpc.net/problem/18352 | ✅ | [Silver 2] 특정 거리의 도시 찾기
 |  https://www.acmicpc.net/problem/1707 | ✅ | [Gold 4] 이분 그래프
 |  WEEK 7️⃣ | ☑️ |  |
-|  https://www.acmicpc.net/problem/11726 | ☑️ | [Silver 3] 2×n 타일링
-|  https://www.acmicpc.net/problem/11727 | ☑️ | [Silver 3] 2×n 타일링2
-|  https://www.acmicpc.net/problem/9095 | ☑️ | [Silver 3] 1,2,3 더하기
+|  https://www.acmicpc.net/problem/2644 | ☑️ | [Silver 2] 촌수계산
+|  https://www.acmicpc.net/problem/2667 | ☑️ | [Silver 1] 단지번호붙이기
 
 
 <br/>
