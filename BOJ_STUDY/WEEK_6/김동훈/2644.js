@@ -9,21 +9,10 @@ const graph = Array.from({ length: people+1 }).map(_ => []);
 
 for (let i = 0; i < input.length; i++) {
     const [from, to] = input[i].split(" ").map(e => +e);
-    // console.log(from, to)
     graph[from].push(to);
     graph[to].push(from);
 
 }
-
-// const graph = input.reduce((acc, iter) => {
-//     const [parent, child] = iter.split(" ").map(e => +e);
-//     if (acc[parent]) {
-//         acc[parent].push(child);
-//     } else {
-//         acc[parent] = [child];
-//     }
-//     return acc;
-// }, {})
 
 const bfs = (graph, startNode, targetNode) => {
     const visited = [];
