@@ -11,16 +11,19 @@ for (let i = 0; i < input.length; i++) {
     const [from, to] = input[i].split(" ").map(e => +e);
     graph[from].push(to);
     graph[to].push(from);
-
 }
 
+console.log(graph)
 const bfs = (graph, startNode, targetNode) => {
     const visited = [];
     let needVisit = [[startNode, 0]];
-
     while (needVisit.length !== 0) {
         const [node, cnt] = needVisit.shift();
+        // console.log('node,cnt', node, cnt);
+        // 탈출조건
         if (node === targetNode) return cnt;
+
+        // 이미 방문한 노드라면 탐색하지 않는다.
         if (!visited.includes(node)) {
             // 방문 배열 체크
             visited.push(node);
@@ -28,12 +31,13 @@ const bfs = (graph, startNode, targetNode) => {
             let nodes = graph[node].map((e) => [e, cnt + 1]);
             // needVisit배열 원소랑 nodes 원소 합쳐서 needVisit에 담기
             needVisit = needVisit.concat(nodes);
+            // console.log('needVisit', needVisit)
         }
     }
 
     return -1;
 };
-const ans = bfs(graph, target1, target2);
+const ans = bfs(graph, target1, target2); // graph, 7 , 3
 console.log(ans);
 
 
