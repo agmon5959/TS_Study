@@ -14,6 +14,8 @@
 
 <br/><br/>
 
+# ⭐️ 진행 상황 대시보드 ⭐️
+
 | Week | 진행 | 스터디 내용 
 | :----: | :---: | ----------- 
 |   WEEK 1️⃣   | ✅ | 
@@ -33,9 +35,12 @@
 |  WEEK 6️⃣ | ✅ |  |
 |  https://www.acmicpc.net/problem/18352 | ✅ | [Silver 2] 특정 거리의 도시 찾기
 |  https://www.acmicpc.net/problem/1707 | ✅ | [Gold 4] 이분 그래프
-|  WEEK 7️⃣ | ☑️ |  |
-|  https://www.acmicpc.net/problem/2644 | ☑️ | [Silver 2] 촌수계산
-|  https://www.acmicpc.net/problem/2667 | ☑️ | [Silver 1] 단지번호붙이기
+|  WEEK 7️⃣ | ✅ |  |
+|  https://www.acmicpc.net/problem/2644 | ✅ | [Silver 2] 촌수계산
+|  https://www.acmicpc.net/problem/2667 | ✅ | [Silver 1] 단지번호붙이기
+|  WEEK 8️⃣ | ☑️ |  |
+|  https://www.acmicpc.net/problem/14501 | ☑️ | [Silver 3] 퇴사
+|  https://www.acmicpc.net/problem/14503 | ☑️ | [Gold 5] 로봇 청소기
 
 
 <br/>
