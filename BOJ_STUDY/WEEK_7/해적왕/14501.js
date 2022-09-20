@@ -14,7 +14,6 @@ for (let i = 0; i < days; i++) {
     list[i] = [+T, +P]
 }
 
-console.log(list);
 /**
  * 
  * @param {Number} today : 상담 해줄까 말까 고민하는 날짜 (오늘 날짜 )
@@ -25,7 +24,6 @@ const recursiveFunc = (today, benefit) => {
 
     // 종료조건
     if (today === days) return;
-
     // 상담을 진행하는 경우
     // 오늘 날짜 + 걸리는 시간이 내 근무일보다 크거나 같아야한다.
 
