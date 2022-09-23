@@ -30,8 +30,8 @@ function permutation(number, arr) {
     return ans;
 }
 const numberOfCase = permutation(N / 2, numberArr);
-
-const testArr = [];
+console.log(numberOfCase);
+const ansArr = [];
 
 for (let i = 0; i < numberOfCase.length / 2; i++) {
 
@@ -54,11 +54,11 @@ for (let i = 0; i < numberOfCase.length / 2; i++) {
         linkSum += map[lx][ly];
         linkSum += map[ly][lx];
     }
-    testArr.push([startSum, linkSum]);
+    ansArr.push([startSum, linkSum]);
 }
 
 let minValue = Number.MAX_SAFE_INTEGER;
-testArr.forEach((iter) => {
+ansArr.forEach((iter) => {
     let target = Math.abs(iter[0] - iter[1]);
     if (target < minValue) {
         minValue = target;
