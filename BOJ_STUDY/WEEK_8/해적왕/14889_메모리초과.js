@@ -30,35 +30,31 @@ function permutation(number, arr) {
     return ans;
 }
 const numberOfCase = permutation(N / 2, numberArr);
+const compareArr = [];
 
-const testArr = [];
+for (let i = 0; i < numberOfCase.length; i++) {
+    compareArr.push(permutation(2, numberOfCase[i]));
+}
 
-for (let i = 0; i < numberOfCase.length / 2; i++) {
-
-    let startTeam = permutation(2, numberOfCase[i]);
-    let linkTeam = permutation(2, numberOfCase[numberOfCase.length - (i + 1)]);
-
-
-    let startSum = 0;
-    let linkSum = 0;
-    for (let j = 0; j < startTeam.length; j++) {
-        let sx = startTeam[j][0] - 1;
-        let sy = startTeam[j][1] - 1;
-
-        let lx = linkTeam[j][0] - 1;
-        let ly = linkTeam[j][1] - 1;
-
-        startSum += map[sx][sy];
-        startSum += map[sy][sx];
-
-        linkSum += map[lx][ly];
-        linkSum += map[ly][lx];
+const Arr = [];
+for (let i = 0; i < compareArr.length / 2; i++) {
+    let x = compareArr[i];
+    let y = compareArr[compareArr.length - (i + 1)];
+    let sum_1 = 0;
+    let sum_2 = 0;
+    for (let j = 0; j < x.length; j++) {
+        sum_1 += map[x[j][0] - 1][x[j][1] - 1];
+        sum_1 += map[x[j][1] - 1][x[j][0] - 1];
     }
-    testArr.push([startSum, linkSum]);
+    for (let k = 0; k < y.length; k++) {
+        sum_2 += map[y[k][0] - 1][y[k][1] - 1];
+        sum_2 += map[y[k][1] - 1][y[k][0] - 1];
+    }
+    Arr.push([sum_1, sum_2]);
 }
 
 let minValue = Number.MAX_SAFE_INTEGER;
-testArr.forEach((iter) => {
+Arr.forEach((iter) => {
     let target = Math.abs(iter[0] - iter[1]);
     if (target < minValue) {
         minValue = target;
