@@ -38,9 +38,12 @@
 |  WEEK 7️⃣ | ✅ |  |
 |  https://www.acmicpc.net/problem/2644 | ✅ | [Silver 2] 촌수계산
 |  https://www.acmicpc.net/problem/2667 | ✅ | [Silver 1] 단지번호붙이기
-|  WEEK 8️⃣ | ☑️ |  |
-|  https://www.acmicpc.net/problem/14501 | ☑️ | [Silver 3] 퇴사
-|  https://www.acmicpc.net/problem/14503 | ☑️ | [Gold 5] 로봇 청소기
+|  WEEK 8️⃣ | ✅ |  |
+|  https://www.acmicpc.net/problem/14501 | ✅ | [Silver 3] 퇴사
+|  https://www.acmicpc.net/problem/14503 | ✅ | [Gold 5] 로봇 청소기
+|  WEEK 9️⃣ | ☑️ |  |
+|  https://www.acmicpc.net/problem/14889 | ☑️ | [Silver 2] 스타트와 링크
+|  https://www.acmicpc.net/problem/16236 | ☑️ | [Gold 3] 아기 상어
 
 
 <br/>
