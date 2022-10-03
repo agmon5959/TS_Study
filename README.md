@@ -45,8 +45,7 @@
 |  https://www.acmicpc.net/problem/14889 | ✅ | [Silver 2] 스타트와 링크
 |  https://www.acmicpc.net/problem/16236 | ✅ | [Gold 3] 아기 상어
 |  WEEK 🔟 | ☑️ |  |
-|  https://www.acmicpc.net/problem/14889 | ☑️ | [Silver 2] ㅁㅈ
-|  https://www.acmicpc.net/problem/16236 | ☑️ | [Gold 3] ㅁㅈ
+|  https://www.acmicpc.net/problem/14889 | ☑️ | [Platinum 5] 히스토그램에서 가장 큰 직사각형
 
 
 <br/>
