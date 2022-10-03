@@ -11,6 +11,7 @@ for _ in range(m):
     graph[x].append(y)
     graph[y].append(x)
 
+print(graph)
 
 def dfs(node):
     for n in graph[node]:
