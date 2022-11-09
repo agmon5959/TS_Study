@@ -50,7 +50,8 @@ const bfs = (start, graph, visited) => {
 for (let i = 0; i < N; i++) {
     // 정점의 갯수 V , 간선의 갯수 E
     const [V, E] = input.shift().split(' ').map(e=>+e);
-    const edges = input.splice(0, E).map(v => v.split(' ').map(e=>+e));
+    const edges = input.splice(0, E).map(v => v.split(' ').map(e => +e));
+    console.log(edges);
     
 
     const graph = edges.reduce((acc, v) => {
@@ -70,6 +71,8 @@ for (let i = 0; i < N; i++) {
         }
         return acc;
     }, {});
+
+    console.log(graph);
 
 
     
