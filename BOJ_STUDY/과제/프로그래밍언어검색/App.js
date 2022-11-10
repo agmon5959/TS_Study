@@ -1,5 +1,6 @@
 import SearchInput from "./components/SearchInput.js";
 import Suggestion from "./components/Suggestion.js";
+import SelectedLanguage from "./components/SelectedLanguage.js";
 import callAPI from "./API/APIs.js";
 
 export default function App({ target }) {
@@ -18,6 +19,7 @@ export default function App({ target }) {
             items: this.state.fetchedLanguages,
             selectedIndex: 0,
         })
+        selectedLanguage.setState(this.state.selectedLanguages)
     }
 
 
@@ -45,9 +47,14 @@ export default function App({ target }) {
             this.setState({
                 ...this.state,
                 // todo 추후 수정
-                selectedLanguages: this.state.selectedLanguages,
+                selectedLanguages: this.state.selectedLanguages.push(lang),
             })
         }
     });
+
+    const selectedLanguage = new SelectedLanguage({
+        target,
+        initState: [],
+    })
 
 }

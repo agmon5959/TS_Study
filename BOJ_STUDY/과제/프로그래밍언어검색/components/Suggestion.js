@@ -46,10 +46,6 @@ export default function Suggestion({ target, initState, onSelect }) {
     })
 
 
-
-
-
-
     this.render = () => {
         const { items } = this.state;
         if (items.length > 0) {
