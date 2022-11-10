@@ -12,9 +12,14 @@ export default function SearchInput({ target, initState, onChangeInput }) {
     }
 
     this.element.addEventListener("keyup", (e) => {
-        onChangeInput(e.target.value);
+        if (!e.key.includes("Arrow") && !e.key.includes("Enter")) {
+            onChangeInput(e.target.value);
+        }
     })
 
+    this.element.addEventListener("submit", (e) => {
+        e.preventDefault();
+    })
 
     this.render();
 

@@ -1,10 +1,11 @@
 import SearchInput from "./components/SearchInput.js";
-import callAPI from "./API/API.js";
+import Suggestion from "./components/Suggestion.js";
+import callAPI from "./API/APIs.js";
 
 export default function App({ target }) {
 
     this.state = {
-        searchResult: [],
+        fetchedLanguages: [],
         selectedLanguages: [],
     }
 
@@ -13,16 +14,40 @@ export default function App({ target }) {
             ...this.state,
             ...nextState
         }
+        suggestion.setState({
+            items: this.state.fetchedLanguages,
+            selectedIndex: 0,
+        })
     }
 
 
     const searchInput = new SearchInput({
         target,
         initState: '',
-        onChangeInput: (inputValue) => {
-            const result = callAPI(inputValue);
-            return result;
+        onChangeInput: async (inputValue) => {
+            if (inputValue.length === 0) {
+                this.setState({ fetchedLanguages: [] });
+            } else {
+                const result = await callAPI(inputValue);
+                this.setState({ fetchedLanguages: result });
+            }
         }
     })
+
+    const suggestion = new Suggestion({
+        target,
+        initState: {
+            items: [],
+            cursor: 0,
+        },
+        onSelect: (lang) => {
+            alert(lang);
+            this.setState({
+                ...this.state,
+                // todo 추후 수정
+                selectedLanguages: this.state.selectedLanguages,
+            })
+        }
+    });
 
 }
