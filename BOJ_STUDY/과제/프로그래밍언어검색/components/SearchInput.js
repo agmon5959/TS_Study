@@ -3,6 +3,8 @@ export default function SearchInput({ target, initState, onChangeInput }) {
     this.element = document.createElement("form");
     this.element.className = "SearchInput";
 
+
+
     this.state = initState
 
     target.appendChild(this.element);
@@ -21,6 +23,12 @@ export default function SearchInput({ target, initState, onChangeInput }) {
         e.preventDefault();
     })
 
+
+    setTimeout(() => {
+        this.element[0].focus();
+    }, 0)
+
     this.render();
+
 
 }
