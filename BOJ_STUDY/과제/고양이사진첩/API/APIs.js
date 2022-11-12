@@ -4,20 +4,20 @@ const APIs = async (type, param) => {
     let callAPI = "";
     let url = "";
     let json = null;
+    debugger
     switch (type) {
         case "root":
-            callAPI = await fetch(API_END_POINT, { method: "GET" });
+            url = `${API_END_POINT}`
             break;
         case "catDir":
-            url = `${API_END_POINT}+${param}`
-            callAPI = fetch(url, { method: "GET" });
+            url = `${API_END_POINT}${param}`
             break;
         case "image":
-            url = `${API_END_POINT}+${param}`
-            callAPI = fetch(url, { method: "GET" });
+            url = `${API_END_POINT}${param}`
             break;
     }
 
+    callAPI = await fetch(url, { method: "GET" });
     if (callAPI.ok) {
         json = callAPI.json();
     }
