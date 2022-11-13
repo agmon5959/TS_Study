@@ -1,5 +1,3 @@
-function Modal({ target }) {
+export default function Modal() {
 
 }
-
-export default Modal;

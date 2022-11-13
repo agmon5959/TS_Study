@@ -4,7 +4,6 @@ const APIs = async (type, param) => {
     let callAPI = "";
     let url = "";
     let json = null;
-    debugger
     switch (type) {
         case "root":
             url = `${API_END_POINT}`
@@ -17,12 +16,26 @@ const APIs = async (type, param) => {
             break;
     }
 
-    callAPI = await fetch(url, { method: "GET" });
-    if (callAPI.ok) {
-        json = callAPI.json();
-    }
+    try {
+        callAPI = await fetch(url);
+        if (!callAPI.ok) {
+            throw new Error("error");
+        }
+        switch (callAPI.status / 100) {
+            case 3:
+                return "Redirect Error";
+            case 4:
+                return "Client Error";
+            case 5:
+                return "Server Error";
+            default:
+                return json = callAPI.json();
+        }
 
-    return json;
+
+    } catch (e) {
+        console.log(e);
+    }
 }
 
 export default APIs;
